@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
+    <!-- Header section -->
     <header class="header">
       <div class="container header-container">
         <a class="header-logo" lang="en" href="./index.html">
@@ -57,11 +58,16 @@
         </ul>
       </div>
     </header>
+    <!-- Main section -->
     <main>
+      <!-- Hero section -->
       <section class="hero section">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="hero-button" type="button">Замовити послугу</button>
+        <button class="hero-button" type="button" data-modal-open>
+          Замовити послугу
+        </button>
       </section>
+      <!-- About us section -->
       <section class="section about-us-section">
         <div class="container">
           <h2 class="visually-hidden">Про нас</h2>
@@ -96,6 +102,7 @@
           </ul>
         </div>
       </section>
+      <!-- Cases section -->
       <section class="section cases-section">
         <div class="container">
           <h2 class="cases">Чим ми займаємося</h2>
@@ -381,6 +388,7 @@
           </ul>
         </div>
       </section>
+      <!-- Client's section -->
       <section class="section">
         <div class="container clients-container">
           <h2 class="client-title">Постійні клієнти</h2>
@@ -560,5 +568,19 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal" data-modal-window>
+        <button class="modal-btn" data-modal-close>
+          <svg class="modal-icon" width="11" height="11">
+            <use href="./images/icons.svg#close-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
